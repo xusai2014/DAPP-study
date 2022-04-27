@@ -51,6 +51,9 @@ module.exports = {
   defaultNetwork: 'hardhat',
   networks: {
     hardhat: {
+      accounts: {
+        mnemonic: mnemonic(),
+      },
       chainId: 31337,
       from: '',
       gas: "auto",

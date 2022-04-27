@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "node": "yarn workspace hardhat-deploy run node",
-    "deploy:sol": "yarn workspace hardhat-deploy run deploy"
+    "deploy:ropsten": "yarn workspace hardhat-deploy run deploy:ropsten",
+    "deploy:local": "yarn workspace hardhat-deploy run deploy:local",
+    "dev": "yarn workspace next-app run dev"
   },
   "private": true,
   "author": "jerry xu",
