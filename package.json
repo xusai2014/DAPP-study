@@ -1,0 +1,16 @@
+{
+  "name": "dapp-study",
+  "version": "1.0.0",
+  "description": "Dapp 学习框架",
+  "main": "index.js",
+  "scripts": {
+    "node": "yarn workspace hardhat-deploy run node",
+    "deploy:sol": "yarn workspace hardhat-deploy run deploy"
+  },
+  "private": true,
+  "author": "jerry xu",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ]
+}

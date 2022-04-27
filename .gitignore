@@ -1,0 +1,13 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain
+**/node_modules
+
+.idea
+#Hardhat files
+cache
+artifacts
+
+packages/**/mnemonic.txt
