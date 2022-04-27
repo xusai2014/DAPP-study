@@ -54,6 +54,7 @@ module.exports = {
       accounts: {
         mnemonic: mnemonic(),
       },
+      url: "http://localhost:8545",
       chainId: 31337,
       from: '',
       gas: "auto",
