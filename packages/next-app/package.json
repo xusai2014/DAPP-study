@@ -1,5 +1,5 @@
 {
-  "name": "next-app",
+  "name": "@jerry/next-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,12 +12,14 @@
     "@apollo/client": "^3.6.0",
     "apollo-server-micro": "^3.6.7",
     "deepmerge": "^4.2.2",
+    "ethers": "^5.6.4",
     "graphql": "^16.4.0",
     "lodash": "^4.17.21",
     "micro": "^9.3.4",
     "next": "12.1.5",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "web3modal": "^1.9.7"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.182",

@@ -4,9 +4,9 @@
   "description": "Dapp 学习框架",
   "main": "index.js",
   "scripts": {
-    "node": "yarn workspace hardhat-deploy run node",
-    "deploy:ropsten": "yarn workspace hardhat-deploy run deploy:ropsten",
-    "deploy:local": "yarn workspace hardhat-deploy run deploy:local",
+    "node": "yarn workspace @jerry/hardhat-deploy run node",
+    "deploy:ropsten": "yarn workspace @jerry/hardhat-deploy run deploy:ropsten",
+    "deploy:hardhat": "yarn workspace @jerry/hardhat-deploy run deploy:hardhat",
     "dev": "yarn workspace next-app run dev"
   },
   "private": true,

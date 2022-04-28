@@ -1,18 +1,24 @@
 {
-  "name": "hardhat-deploy",
+  "name": "@jerry/hardhat-deploy",
   "version": "1.0.0",
   "scripts": {
-    "node": "npx hardhat node",
+    "node": "npx hardhat node --no-deploy",
     "test": "npx hardhat test",
-    "deploy:ropsten": "npx hardhat run scripts/deploy.js --network ropsten",
-    "deploy:local": "npx hardhat run scripts/deploy.js"
+    "deploy:hardhat": "npx hardhat deploy  --network hardhat --export-all ../next-app/contracts/hardhat_contracts.json",
+    "deploy:ropsten": "npx hardhat deploy  --network ropsten --export-all ../next-app/contracts/hardhat_contracts.json",
+    "postdeploy": "npx hardhat run scripts/publish.js"
   },
   "devDependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.0.5",
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
     "chai": "^4.3.6",
     "ethereum-waffle": "^3.4.4",
     "ethers": "^5.6.4",
-    "hardhat": "^2.9.3"
+    "hardhat": "^2.9.3",
+    "hardhat-abi-exporter": "^2.9.0",
+    "hardhat-deploy": "^0.11.4"
   }
 }
