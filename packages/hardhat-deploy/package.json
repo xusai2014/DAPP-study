@@ -2,10 +2,9 @@
   "name": "@jerry/hardhat-deploy",
   "version": "1.0.0",
   "scripts": {
-    "node": "npx hardhat node --no-deploy",
+    "node": "npx hardhat node --export-all ../next-app/contracts/hardhat_contracts.json --watch",
     "test": "npx hardhat test",
-    "deploy:hardhat": "npx hardhat deploy  --network hardhat --export-all ../next-app/contracts/hardhat_contracts.json",
-    "deploy:ropsten": "npx hardhat deploy  --network ropsten --export-all ../next-app/contracts/hardhat_contracts.json",
+    "deploy": "npx hardhat deploy  --network ropsten --export-all ../next-app/contracts/hardhat_contracts.json",
     "postdeploy": "npx hardhat run scripts/publish.js"
   },
   "devDependencies": {

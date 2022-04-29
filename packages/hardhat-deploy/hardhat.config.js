@@ -69,14 +69,7 @@ module.exports = {
         url: `https://eth-mainnet.alchemyapi.io/v2/9AVIKwlSvR6p8skmu8MJ38IcWxTUicl3`,
         blockNumber: 11095000
       },
-      chainId: 31337,
-      from: '',
-      gas: "auto",
-      gasPrice: "auto",
-      mining: {
-        auto: false,
-        interval: 5000
-      },
+      chainId: 31337
     },
     ropsten: {
       url: `https://eth-ropsten.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
